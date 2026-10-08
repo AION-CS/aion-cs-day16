@@ -65,7 +65,7 @@ export function Block31() {
   return (
     <AnswerBlock
       id="block-3-1"
-      title={tt("Block 3.1 · The target vision of a data-driven control system", "Block 3.1 · Das Zielbild eines datengetriebenes Steuerungssystems")}
+      title={tt("Block 3.1 · The target vision of a data-driven control system", "Block 3.1 · Das Zielbild eines datengetriebenen Steuerungssystems")}
       kind="OBJECTIVE + JUDGED"
       minutes={BLOCK_MINUTES["3.1"]}
       findIt={tt("Route 2 → Task 2 → the six principles below. Answer by choosing three and saying what each means for DataDriven.", "Route 2 → Task 2 → die sechs Prinzipien unten. Antworten Sie, indem Sie drei wählen und sagen, was jedes für DataDriven bedeutet.")}
@@ -118,7 +118,7 @@ export function Block31() {
               id={`principle-kit-${c}`}
               refs={[
                 { label: tt("The principle as printed", "Das Prinzip, wie gedruckt"), value: PRINCIPLES[c].means, target: IDS.principlePick },
-                { label: tt("The problems the brief names", "Die Probleme, die der Auftrag nennt"), value: tt("high churn · inefficient retention · a good alert that is never used", "hoher Churn · ineffiziente Retention · ein guter Alarm, der nie genutzt wird"), target: "task-2" },
+                { label: tt("The problems the brief names", "Die Probleme, die der Auftrag nennt"), value: tt("the data is not used · churn is found too late · a good alert that is never used", "Daten werden nicht genutzt · Churn wird zu spät erkannt · ein guter Alarm, der nie genutzt wird"), target: "task-2" },
               ]}
               steps={[
                 tt("Say what changes for a team or a customer once everyone works by this principle.", "Sagen Sie, was sich für ein Team oder einen Kunden ändert, wenn alle nach diesem Prinzip arbeiten."),
@@ -147,7 +147,7 @@ export function Block32() {
   return (
     <AnswerBlock
       id="block-3-2"
-      title={tt("Block 3.2 · Definition of central sources of evidence about customers", "Block 3.2 · Festlegung zentraler Quellen von Evidenz über Kunden")}
+      title={tt("Block 3.2 · The data sources of the control system", "Block 3.2 · Die Datenquellen des Steuerungssystems")}
       kind="OBJECTIVE"
       minutes={BLOCK_MINUTES["3.2"]}
       findIt={tt("Route 2 → Task 2 → the eight sources below, each with what the customer decides through it and how much of its data reaches the joined customer view today. Answer by choosing a decision for each.", "Route 2 → Task 2 → die acht Quellen unten, jede mit dem, was der Kunde darüber entscheidet, und wie viel ihrer Daten heute die verbundene Kundenansicht erreicht. Antworten Sie, indem Sie für jede eine Entscheidung wählen.")}
@@ -158,9 +158,9 @@ export function Block32() {
       </p>
       <RevealHint id="source-tests" label={tt("Show the test questions", "Testfragen zeigen")} title={tt("The rule · taught in Materi B2", "Die Regel · aus Materi B2")}>
         <ul className="space-y-1.5 text-caption text-ink">
-          <li>{tt("Does the customer decide something through it (say what went wrong or stay silent, keep talking or go quiet, come back or stay away)? If not, a control system built on it would aim at many who never meant to return: not central.", "Entscheidet der Kunde darüber etwas (sagen, was schiefgelaufen ist, oder schweigen, im Gespräch bleiben oder verstummen, zurückkommen oder wegbleiben)? Wenn nicht, würde eine darauf gebaute Retention viele treffen, die nie zurückwollten: nicht zentral.")}</li>
+          <li>{tt("Does the customer decide something through it (keep using the platform or drift away, renew or give notice, keep talking or go quiet)? If not, a control system built on it would watch many who never meant to leave: not central.", "Entscheidet der Kunde darüber etwas (die Plattform weiter nutzen oder abdriften, verlängern oder kündigen, im Gespräch bleiben oder verstummen)? Wenn nicht, würde ein darauf gebautes Steuerungssystem viele beobachten, die nie gehen wollten: nicht zentral.")}</li>
           <li>{tt(`Does at least ${QUALITY_BAR}% of its data reach the joined customer view? Then use it now; if not, improve the data first.`, `Erreichen mindestens ${QUALITY_BAR} % seiner Daten die verbundene Kundenansicht? Dann jetzt nutzen; wenn nicht, zuerst die Daten verbessern.`)}</li>
-          <li>{tt("Volume and cost are not the test: newsletter opens nobody decides anything by are not central; replies to the account manager are.", "Menge und Kosten sind nicht der Test: Newsletter-Öffnungen, über die niemand etwas entscheidet, sind nicht zentral; Antworten an den Account Manager schon.")}</li>
+          <li>{tt("Volume and cost are not the test: newsletter opens nobody decides anything by are not central; the usage log is.", "Menge und Kosten sind nicht der Test: Newsletter-Öffnungen, über die niemand etwas entscheidet, sind nicht zentral; das Nutzungslog schon.")}</li>
           <li>
             <MaterialRefs refs={["B2"]} lead={tt("Taught in", "Gelehrt in")} />
           </li>
@@ -207,7 +207,7 @@ export function Block33() {
   return (
     <AnswerBlock
       id="block-3-3"
-      title={tt("Block 3.3 · A KPI system for retention", "Block 3.3 · Ein KPI-System für die Retention")}
+      title={tt("Block 3.3 · A KPI system for control", "Block 3.3 · Ein KPI-System für die Steuerung")}
       kind="OBJECTIVE + JUDGED"
       minutes={BLOCK_MINUTES["3.3"]}
       findIt={tt("Route 2 → Task 2 → the eight KPI candidates below, each with whether it is linked to staying, how often it is counted, whom it covers and how it is collected. Answer by choosing three and rating them on the four tests of Materi B3.", "Route 2 → Task 2 → die acht KPI-Kandidaten unten, jeder damit, ob er mit dem Bleiben verbunden ist, wie oft er gezählt wird, wen er abdeckt und wie er erhoben wird. Antworten Sie, indem Sie drei wählen und nach den vier Tests aus Materi B3 bewerten.")}
@@ -334,7 +334,7 @@ export function Block34() {
       title={tt("Block 3.4 · Measures tested: roll out, keep testing or stop", "Block 3.4 · Maßnahmen getestet: ausrollen, weiter testen oder stoppen")}
       kind="OBJECTIVE"
       minutes={BLOCK_MINUTES["3.4"]}
-      findIt={tt("Route 2 → Task 2 → the six retention alert tests below, each with its lift, its number of contacted customers and the extra revenue at stake. Answer with an action and an owner for each.", "Route 2 → Task 2 → die sechs Tests von Retentionsansätzen unten, jeder mit Lift, Zahl der angesprochenen Kunden und dem zusätzlichen Umsatz, um den es geht. Antworten Sie mit einer Aktion und einem Owner für jeden.")}
+      findIt={tt("Route 2 → Task 2 → the six measure tests below, each with its lift, its number of contacted customers and the extra revenue at stake. Answer with an action and an owner for each.", "Route 2 → Task 2 → die sechs Maßnahmen-Tests unten, jeder mit Lift, Zahl der angesprochenen Kunden und dem zusätzlichen Umsatz, um den es geht. Antworten Sie mit einer Aktion und einem Owner für jeden.")}
     >
       <MaterialRefs refs={["B4"]} />
       <RevealHint id="logic-tests" label={tt("Show the test questions", "Testfragen zeigen")} title={tt("The rule · taught in Materi B4", "Die Regel · aus Materi B4")}>
@@ -342,7 +342,7 @@ export function Block34() {
           <li>{tt(`Roll out: a lift of ${LIFT_ACT}% or more and at least ${CASES_MIN} contacted customers in each group.`, `Ausrollen: ein Lift von ${LIFT_ACT} % oder mehr und mindestens ${CASES_MIN} angesprochene Kunden in jeder Gruppe.`)}</li>
           <li>{tt(`Keep testing: a lift of ${LIFT_ACT}% or more on fewer than ${CASES_MIN} contacted customers, or a lift between ${LIFT_WATCH}% and ${LIFT_ACT}%.`, `Weiter testen: ein Lift von ${LIFT_ACT} % oder mehr bei weniger als ${CASES_MIN} angesprochenen Kunden, oder ein Lift zwischen ${LIFT_WATCH} % und ${LIFT_ACT} %.`)}</li>
           <li>{tt(`Stop: a lift below ${LIFT_WATCH}%, or a negative one.`, `Stoppen: ein Lift unter ${LIFT_WATCH} %, oder ein negativer.`)}</li>
-          <li>{tt("Who acts follows from what the test is about: a call by the account manager or a free move goes to customer success; a call that needs a director goes to sales and account management; keep testing belongs to the data team; a stopped test has no owner.", "Wer handelt, folgt daraus, worum es im Test geht: Ein Anruf des Account Managers oder ein kostenloser Umzug geht an Customer Success; ein Anruf, der eine Direktorin oder einen Direktor braucht, geht an Vertrieb und Account Management; Weitertesten gehört dem Datenteam; ein gestoppter Test hat keinen Owner.")}</li>
+          <li>{tt("Who acts follows from what the test is about: a call by the account manager or a training goes to customer success; a call that needs a director goes to sales and account management; keep testing belongs to the data team; a stopped test has no owner.", "Wer handelt, folgt daraus, worum es im Test geht: Ein Anruf des Account Managers oder eine Schulung geht an Customer Success; ein Anruf, der eine Direktorin oder einen Direktor braucht, geht an Vertrieb und Account Management; Weitertesten gehört dem Datenteam; ein gestoppter Test hat keinen Owner.")}</li>
           <li>
             <MaterialRefs refs={["B4"]} lead={tt("Taught in", "Gelehrt in")} />
           </li>

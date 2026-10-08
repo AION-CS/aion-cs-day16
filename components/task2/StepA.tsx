@@ -146,7 +146,7 @@ export function StepA({ scn }: { scn: Scn }) {
           <WritingHelp
             id="vision-help"
             refs={[
-              { label: tt("The problems the brief names", "Die Probleme, die der Auftrag nennt"), value: tt("high churn · inefficient retention · measures not measurable", "hoher Churn · ineffiziente Retention · Maßnahmen nicht messbar"), target: "task-2" },
+              { label: tt("The problems the brief names", "Die Probleme, die der Auftrag nennt"), value: tt("the data is not used · churn is found too late · no control over what works", "Daten werden nicht genutzt · Churn wird zu spät erkannt · keine Kontrolle, was wirkt"), target: "task-2" },
               { label: tt("Your plan so far", "Ihr Plan bisher"), value: nowNames.length ? nowNames.join(", ") : tt("nothing set to Now yet", "noch nichts auf „Jetzt“"), target: IDS.panel },
             ]}
             steps={[

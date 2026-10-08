@@ -298,7 +298,7 @@ const RAW = bi([
       "A vendor builds and trains the model, IT cleans the data and account managers read scores nobody can explain. Customers notice nothing until the model is live, after the four months.",
       "Ein Anbieter baut und trainiert das Modell, die IT bereinigt die Daten und Account Manager lesen Scores, die niemand erklären kann. Kunden bemerken nichts, bis das Modell live ist, nach den vier Monaten.",
     ),
-    area: "value" as MeasureArea,
+    area: "trust" as MeasureArea,
     basis: t("On paper aims at the customers the model scores highest, the ones most likely to cancel.", "Zielt auf dem Papier auf die Kunden, die das Modell am höchsten bewertet, also die mit der größten Kündigungswahrscheinlichkeit."),
     joins: "all" as Joins,
     costParts: [
