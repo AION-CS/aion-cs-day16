@@ -77,3 +77,8 @@ after the same unlock. Convenience gate, not security; a reload locks it.
 ## Verified
 
 `tsc`, `verify:calc`, production build, static export served locally from a clean `localStorage`: mentor fill, Route 1 and Route 2 render, no console errors.
+
+## Story comic (CLAUDE.md #49, added 2026-10-15)
+
+Materi A1 (Core) has a "Read the comic" row: six panels about Rina, a Customer Success Manager, and one example customer (Kessler Maschinenbau GmbH, made up), showing result KPI, driver and activity count in one story. Files: `components/comic/` (kit, modal, `scenes16.tsx`) and `data/comics.ts`. The card's own text, picture and "Walk me through it" story are unchanged.
+

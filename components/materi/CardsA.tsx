@@ -1,6 +1,9 @@
 "use client";
 
 import { Bul, Diagram } from "@/components/materi/kit";
+import { ComicButton } from "@/components/comic/ComicModal";
+import { ART_16 } from "@/components/comic/scenes16";
+import { COMIC_A1 } from "@/data/comics";
 import { BarToggle, FairTest, KpiTree, SceneCards, ScatterMap, ScoreBars, TwoRates } from "@/components/materi/diagrams";
 import { Callout, DataTable, MaterialCard } from "@/components/ui/MaterialCard";
 import { ShowMore } from "@/components/ui/ShowMore";
@@ -32,6 +35,7 @@ export function CardA1() {
       ]}
       sources={["kaplan1992", "ries2011", "hubbard2014"]}
     >
+      <ComicButton comic={COMIC_A1} art={ART_16} />
       <ShowMore id="A1" part="research" label={tt("Show the research behind this card", "Die Forschung hinter dieser Karte zeigen")}>
         <p className={p}>
           {tt(
